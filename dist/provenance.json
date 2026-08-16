@@ -1,0 +1,44 @@
+{
+  "_type": "https://in-toto.io/Statement/v0.1",
+  "subject": [
+    {
+      "name": "production_service.bin",
+      "digest": {
+        "sha256": "f91d49c93bf2ce2e283231a3282d5bc8030a4c17a25f1f456ac57124a759da5c"
+      }
+    }
+  ],
+  "predicateType": "https://slsa.dev/provenance/v0.2",
+  "predicate": {
+    "builder": {
+      "id": "https://github.com/Tanyarajput677/ephemeral-runner"
+    },
+    "buildType": "https://slsa.dev/heuristic/v1",
+    "invocation": {
+      "configSource": {
+        "uri": "git+https://github.com/Tanyarajput677/ephemeral-build-security",
+        "digest": {
+          "sha1": "commit-head-main"
+        },
+        "entryPoint": "builder.py"
+      }
+    },
+    "materials": [
+      {
+        "uri": "app_source.py",
+        "digest": {
+          "sha256": "b93501ed2795eea0b55a0cb7234e14eded848e15bdcae2988fa98a041bd589dd"
+        }
+      }
+    ],
+    "metadata": {
+      "buildStartedOn": "2026-08-16T12:58:00.583636+00:00",
+      "completeness": {
+        "parameters": true,
+        "environment": true,
+        "materials": true
+      },
+      "reproducible": true
+    }
+  }
+}

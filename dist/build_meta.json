@@ -1,0 +1,7 @@
+{
+  "artifact_name": "production_service.bin",
+  "sha256": "f91d49c93bf2ce2e283231a3282d5bc8030a4c17a25f1f456ac57124a759da5c",
+  "builder": "ephemeral-hermetic-builder-v1",
+  "timestamp": 1786885080.5500145,
+  "status": "BUILT_SUCCESS"
+}
